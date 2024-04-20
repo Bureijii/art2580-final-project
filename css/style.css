@@ -1,0 +1,286 @@
+* {margin:0; padding:0; box-sizing: border-box}
+
+body{
+    background-color:black;
+    color:white;
+}
+
+header ul{
+    display:flex;
+    flex-direction:row;
+    justify-content:flex-end;
+    gap:30px;
+    list-style-type:none;
+    padding:15px;
+    font-family:'Lustria';
+    font-size:20px;
+}
+
+@media (max-width:1100px){
+    header ul{
+        font-size:15px;
+    }
+}
+
+@media (max-width:880px){
+    header ul{
+        font-size:13px;
+    }
+}
+
+@media (max-width:783px){
+    header ul{
+        display:none;
+    }
+}
+
+#address::before{
+    content:"";
+    display:inline-block;
+    width:25px;
+    height:25px;
+    background:url('../img/address.png') no-repeat;
+    background-size:contain;
+    vertical-align:middle;
+}  
+
+#phone::before{
+    content:"";
+    display:inline-block;
+    width:25px;
+    height:25px;
+    margin-right:5px;
+    background:url('../img/phone.png') no-repeat;
+    background-size:contain;
+    vertical-align:middle;
+} 
+
+#email::before{
+    content:"";
+    display:inline-block;
+    width:25px;
+    height:25px;
+    margin-right:10px;
+    background:url('../img/email.png') no-repeat;
+    background-size:contain;
+    vertical-align:middle;
+} 
+
+.hero img{
+    position:relative;
+    top:0;
+    left:0;
+    width:100%;
+    object-fit:cover;
+}
+
+.logo{
+    position:absolute;
+    top:10%;
+    left:1%;
+}
+
+
+@media (max-width:783px){
+    .logo{
+        top:1%;
+    }
+}
+
+.logo img{
+    width:100%;
+    height:100%;
+}
+
+@media (max-width:1100px){
+    .logo img{
+        width:80%;
+        height:80%;
+    }
+}
+
+@media (max-width:880px){
+    .logo img{
+        width:70%;
+        height:70%;
+    }
+}
+
+.header h1{
+    font-family:'Lustria';
+    text-align:center;
+    padding:30px;
+    font-weight:normal;
+}
+
+@media (max-width:665px){
+    .header h1{
+        font-size:25px;
+    }
+}
+
+@media (max-width:536px){
+    .header h1{
+        font-size:23px;
+    }
+}
+
+hr{
+    width:700px;
+    margin:0 auto;
+    border:0;
+    border-top:1px solid #437086;
+}
+
+.main-buttons{
+    display:flex;
+    justify-content:center;
+    gap:60px;
+    margin:0 auto;
+    padding:40px;
+}
+
+@media (max-width:570px){
+    .main-buttons{
+       gap:30px;
+    }
+}
+
+.main-buttons button{
+    background-color:#FF7300;
+    border:none;
+    padding:20px;
+    font-family:'Kantumruy Pro';
+    font-size:18px;
+    font-weight:bold;
+    color:white;
+    border-radius:50px;
+    width:130px;
+    cursor:pointer;
+}
+
+@media (max-width:570px){
+    .main-buttons button{
+        padding:15px;
+        width:110px;
+    }
+}
+
+.main-paragraph-1{
+    background:url('../img/p-bg.png') no-repeat;
+    width:100%;
+    height:auto;
+    background-size:cover;
+    margin-bottom:50px;
+}
+
+.main-paragraph-1 p{
+    font-family:'Kantumruy Pro';
+    font-size:20px;
+    line-height:40px;
+    padding:30px;
+    width:750px;
+    margin:0 auto;
+}
+
+@media (max-width:770px){
+    .main-paragraph-1 p{
+        width:90%;
+    }
+}
+
+#paragraph-orange::before{
+    content:"";
+    display:inline-block;
+    width:60px;
+    height:60px;
+    margin-right:-20px;
+    background:url('../img/orange.png') no-repeat;
+    background-size:contain;
+    vertical-align:bottom;
+} 
+
+.main-paragraph-2{
+    background:url('../img/p-bg.png') no-repeat;
+    width:100%;
+    height:auto;
+    background-size:cover;
+    margin-top:50px;
+    font-family:'Kantumruy Pro';
+    font-size:20px;
+    line-height:40px;
+}
+
+.main-list{
+    display:flex;
+    gap:150px;
+    width:750px;
+    justify-content:center;
+    align-items:center;
+    margin:0 auto;
+    padding:30px;
+}
+
+@media (max-width:770px){
+    .main-list{
+        width:90%;
+        gap:50px;
+    }
+}
+
+.main-paragraph-2 h1{
+    font-weight:normal;
+    font-size:30px;
+    text-align:center;
+    padding-top:30px;
+}
+
+@media (max-width:770px){
+    .main-paragraph-2 h1{
+        width:95%;
+        margin:0 auto;
+    }
+}
+
+h1 span{
+    text-shadow: 0 0 3px #47474b, 0 0 5px #47474b;
+}
+
+#header-orange::before{
+    content:"";
+    display:inline-block;
+    width:60px;
+    height:60px;
+    margin-right:-42px;
+    background:url('../img/orange.png') no-repeat;
+    background-size:contain;
+    vertical-align:bottom;
+} 
+
+li::marker{
+    color:#FF7300;
+}
+
+footer{
+    height:60px;
+    font-family:'Lustria';
+    font-size:15px;
+    margin:0 auto;
+    width:470px;
+}
+
+footer ul{
+    padding:20px;
+    display:none;
+}
+
+@media (max-width:783px){
+    footer ul{
+        display:block;
+    }
+}
+
+footer li{
+    margin:10px;
+    list-style-type:none;
+}
