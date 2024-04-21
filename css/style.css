@@ -66,18 +66,45 @@ header ul{
     vertical-align:middle;
 } 
 
+#address, #phone, #email{
+    animation:slideMe .7s ease-in-out;
+}
+
+@keyframes slideMe{
+    0%{
+        transform:translateY(-50px);
+        opacity:0;
+    }
+    100%{
+        opacity:1;
+    }
+}
+
 .hero img{
     position:relative;
     top:0;
     left:0;
     width:100%;
     object-fit:cover;
+    animation:fadeIn 2s;
+}
+
+@keyframes fadeIn{
+    0% {opacity: 0;}
+    100% {opacity: 1;}
 }
 
 .logo{
     position:absolute;
     top:10%;
     left:1%;
+    animation: bounce2 2s ease;
+}
+
+@keyframes bounce2 {
+	0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+	40% {transform: translateY(-30px);}
+	60% {transform: translateY(-15px);}
 }
 
 
@@ -130,6 +157,17 @@ hr{
     margin:0 auto;
     border:0;
     border-top:1px solid #437086;
+    animation:slideMe .7s ease-in-out;
+}
+
+@keyframes slideMe{
+    0%{
+        transform:translateX(-200px);
+        opacity:0;
+    }
+    100%{
+        opacity:1;
+    }
 }
 
 .main-buttons{
@@ -157,6 +195,11 @@ hr{
     border-radius:50px;
     width:130px;
     cursor:pointer;
+    transition: 0.3s;
+}
+
+.main-buttons button:hover{
+    background-color:#437086;
 }
 
 @media (max-width:570px){
@@ -211,6 +254,22 @@ hr{
     line-height:40px;
 }
 
+.main-paragraph-1, .main-paragraph-2, footer{
+    animation:fade-in linear forwards;
+    animation-timeline:view();
+    animation-range-start:258px;
+    animation-range-end:500px;
+    scale:0.8;
+    opacity:0;
+}
+
+@keyframes fade-in{
+    to{
+        scale:1;
+        opacity:1;
+    }
+}
+
 .main-list{
     display:flex;
     gap:150px;
@@ -244,6 +303,7 @@ hr{
 
 h1 span{
     text-shadow: 0 0 3px #47474b, 0 0 5px #47474b;
+    z-index:2;
 }
 
 #header-orange::before{
@@ -255,7 +315,22 @@ h1 span{
     background:url('../img/orange.png') no-repeat;
     background-size:contain;
     vertical-align:bottom;
+    animation: rotate-in-down-left 2s ease;
+    z-index:1;
 } 
+
+@keyframes rotate-in-down-left {
+    0% {
+      transform-origin: left bottom;
+      transform: rotate(-90deg);
+      opacity: 0;
+    }
+    100% {
+      transform-origin: left bottom;
+      transform: rotate(0);
+      opacity: 1;
+    }
+  }
 
 li::marker{
     color:#FF7300;
