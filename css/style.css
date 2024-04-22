@@ -3,6 +3,7 @@
 body{
     background-color:black;
     color:white;
+    overflow-x:hidden;
 }
 
 header ul{
@@ -264,7 +265,7 @@ hr{
     line-height:40px;
 }
 
-.main-paragraph-1, .main-paragraph-2, footer/*, .services-1, .services-2, .services-3*/{
+.main-paragraph-1, .main-paragraph-2, .services-1, .services-2, .services-3{
     animation:fade-in linear forwards;
     animation-timeline:view();
     animation-range-start:258px;
