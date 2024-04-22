@@ -207,7 +207,7 @@ hr{
     to {
       transform: scale(1);
     }
-  }
+}
 
 .main-buttons button:hover{
     background-color:#437086;
